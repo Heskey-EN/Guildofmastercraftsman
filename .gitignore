@@ -27,3 +27,6 @@ dist-ssr
 
 # Internal design/copy generation artifacts
 .design/
+
+# Vercel
+.vercel
