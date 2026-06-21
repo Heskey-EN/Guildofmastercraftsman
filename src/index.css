@@ -1293,10 +1293,11 @@
     grid-template-columns: 1fr;
   }
   .hero-photo {
-    order: -1;
-    max-width: 480px;
+    /* Text + CTA first on mobile; photo follows. */
+    max-width: 440px;
     margin-inline: auto;
     padding-left: 0;
+    width: 100%;
   }
   .footer__cols {
     grid-template-columns: 1fr 1fr;
@@ -1323,6 +1324,15 @@
   .process-num {
     width: 48px;
     height: 48px;
+  }
+  /* Keep the corner seal fully on-screen on phones */
+  .frame-seal {
+    left: 4px;
+    bottom: -16px;
+  }
+  /* Larger tap targets for filter chips */
+  .chip {
+    padding: 10px 6px;
   }
 }
 

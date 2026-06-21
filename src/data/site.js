@@ -10,10 +10,10 @@ export const BRAND = {
 }
 
 export const CONTACT = {
-  phone: '01XXX XXX XXX',
-  phoneHref: 'tel:+4401XXXXXXXXX',
-  email: 'enquiries@guildofmastercraftsman.co.uk',
-  emailHref: 'mailto:enquiries@guildofmastercraftsman.co.uk',
+  phone: '07805 070450',
+  phoneHref: 'tel:+447805070450',
+  email: 'dea49.info@outlook.com',
+  emailHref: 'mailto:dea49.info@outlook.com',
   area: 'across the UK',
   addressLines: ['[Street address]', '[Town]', '[County]', '[Postcode]'],
   hours: [
