@@ -117,6 +117,16 @@ export default function Navbar() {
           aria-modal="true"
           aria-label="Site menu"
         >
+          <button
+            type="button"
+            className="mobile-close"
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+          >
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
+              <path d="M5 5l14 14M19 5L5 19" />
+            </svg>
+          </button>
           <div className="mobile-sheet__inner">
             <Seal variant="full" size={120} animate={open} />
             <nav className="mobile-nav" aria-label="Mobile">

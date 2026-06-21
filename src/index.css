@@ -302,6 +302,8 @@
     transition: transform 0.16s ease, box-shadow 0.16s ease,
       background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     will-change: transform;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .btn-primary {
@@ -984,8 +986,7 @@
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(251, 247, 238, 0.92);
-    backdrop-filter: blur(6px);
+    background: rgba(251, 247, 238, 0.97);
     border-bottom: 1px solid transparent;
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
   }
@@ -1066,13 +1067,17 @@
     display: none;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 5px;
     width: 44px;
     height: 44px;
     background: none;
     border: 0;
     cursor: pointer;
+    position: relative;
     z-index: 60;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
   .hamburger span {
     display: block;
@@ -1095,10 +1100,29 @@
     position: fixed;
     inset: 0;
     background: var(--cream);
-    z-index: 45;
+    z-index: 1000;
     transform: translateY(-100%);
     visibility: hidden;
     transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.4s;
+  }
+  .mobile-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    background: none;
+    border: 0;
+    color: var(--ink);
+    cursor: pointer;
+    z-index: 2;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .mobile-close:hover {
+    color: var(--wax);
   }
   .mobile-sheet.is-open {
     transform: none;
